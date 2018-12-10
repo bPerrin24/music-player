@@ -27,27 +27,26 @@ void draw() {
 void mousePressed() {
 }
 
-void keyPressed() {
-
-  if (key == 'p' || key == 'P') {//Play/Pause
-  }  
-  if (key == 'p' || key == 'P') {
-    if ( song1.isPlaying() ) {
+ 
+    
+    
+    void keyPressed() {
+  if (key == 'p' || key == 'P') { //Play-Pause
+ if ( song1.isPlaying() ) {
       song1.pause();
     } else if ( song1.position() == song1.length() ) {
       song1.rewind();
       song1.play();
     } else {
       song1.play();
-    }
-
-    if (key == 's' || key == 'S') {//stop
-      if ( song1.isPlaying() ) {
-        song1.pause();
-        song1.rewind();
-      } else { //Song is not playing
-        song1.rewind();
-      }
+  }
+  if (key == 's' || key == 'S') {//Stop
+    if ( song1.isPlaying() ) {
+      song1.pause();
+      song1.rewind();
+    } else { //Song is not playing
+      song1.rewind();
     }
   }
+} 
 }
