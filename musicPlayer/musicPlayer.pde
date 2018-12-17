@@ -17,6 +17,7 @@ int currentSong = numberOfSongs - numberOfSongs;
 
 
 void setup() {
+
   
     minim = new Minim(this);
   song[0] = minim.loadFile("Spooky_SZN.mp3");
@@ -27,4 +28,13 @@ void setup() {
   size(500, 600);
 
   musicPlayerGUI();
+  quitButtonSetup();
+}
+void draw() {
+  quitButtonDraw();
+}
+
+void mouseClicked() {
+   musicPlayerButtons();
+   quitButtonMouseClicked();
 }
