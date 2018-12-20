@@ -14,7 +14,7 @@ void musicPlayerGUI() {
   //Play Button
  
   triangle(width*7/16, height*9/16, width*8/16, height*5/8, width*7/16, height*11/16);
-  line(width*9/16, height*9/16, width*);
+  line(width*9/16, height*9/16, width* );
   //line();
 
   //Backwards button
